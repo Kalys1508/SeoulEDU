@@ -26,10 +26,10 @@
                             <a class="menu-list-link" href="#">Home</a>
                         </li>
                         <li class="menu-list-item">
-                            <a class="menu-list-link" href="#">Cources</a>
+                            <a class="menu-list-link" href="#">Courses</a>
                         </li>
                         <li class="menu-list-item">
-                            <a class="menu-list-link" href="#">Testimoinals</a>
+                            <a class="menu-list-link" href="#">Testimonials</a>
                         </li>
                         <li class="menu-list-item">
                             <a class="menu-list-link" href="#">Prices</a>
@@ -43,47 +43,67 @@
         </div>
     </header>
 
-    <main>
-        <div class="container">
-            <div class="fill-form-body">
-                <form>
-                    <div class="fill-form-head">
-                        <h5 class="fill-title">REGISTRATION</h5>
-                    </div>
-                    <label for="First name">
-                        <input type="text" name="First name" id="First name" required>
-                    </label>
-
-                    <label for="Last name">
-                        <input type="text" name="Last name" id="Last name">
-                    </label>
-
-                    <label for="Phone number">
-                        <input type="tel" name="Phone number" id="Phone number" required>
-                    </label>
-                    <label for="E-mail">
-                        <input type="email" name="E-mail" id="E-mail">
-                    </label>
-                    <label for="Comments">
-                        <input type="Comments" name="Comments" id="Comments">
-                    </label>
-
+    <div class="container">
+        <div class="fill-form">
+            <div class="fill-form-top">
+                <h5 class="fill-form-top-title">Please fill this form</h5>
             </div>
+            <form class="fill-form-body">
+                <div class="fill-form-body-middle">
+                    <div class="fill-form-body-left">
+                        <div class="fill-form-fields" id="field-1">
+                            <label for="firstName" class="first-name"></label>
+                            <input class="typedata" type="text" name="firstName" id="firstName" maxlength="15"
+                                placeholder="Type your first name..">
+                        </div>
+                        <div class="fill-form-fields" id="field-3">
+                            <label for="telephone" class="telephone"></label>
+                            <input class="typedata" type="tel" name="telephone" id="telephone" required
+                                placeholder="Type your phone number +998 000000000">
+                        </div>
+                    </div>
+                    <div class="fill-form-body-right">
+                        <div class="fill-form-fields" id="field-2">
+                            <label for="lastName" class="last-name"></label>
+                            <input class="typedata" type="text" name="lastName" id="lastName" required pattern=".{3,16}"
+                                maxlength="25" placeholder="Type your last name..">
+                        </div>
+                        <div class="fill-form-fields" id="field-4">
+                            <label for="e-mail" class="e-mail"></label>
+                            <input class="typedata" type="email" name="e-mail" id="e-mail" required pattern=".{3,35}"
+                                maxlength="35" placeholder="Type your e-mail..">
+                        </div>
+                    </div>
+                </div>
+                <div class="fill-form-fields-bottom">
+                    <label for="comments">
+                        <textarea class="typedata" id="comments" name="comments" rows="5" cols="25"
+                            placeholder="Here you can ask questions, add comments and suggestions..."></textarea>
+                        <div class="fill-form-fields-button">
+                            <button type="submit" class="btn btn-primary">SEND FORM</button>
+                        </div>
+                    </label>
+                </div>
+            </form>
         </div>
+
+
         <div class="maps-block">
             <button class="btn btn-primary">NAVIGATION</button>
             <div class="maps-wrap">
                 <div class="maps">
                     <div class="map-yandex" style="display: block">
-                        <div style="position:relative;overflow:hidden;"><a
-                                href="https://yandex.uz/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps"
-                                style="color:#eee;font-size:12px;position:absolute;top:0px;">Ташкент</a><a
-                                href="https://yandex.uz/maps/10335/tashkent/?ll=69.207241%2C41.279622&mode=whatshere&utm_medium=mapframe&utm_source=maps&whatshere%5Bpoint%5D=69.205371%2C41.279869&whatshere%5Bzoom%5D=21&z=17"
+                        <div style="position:relative;overflow:hidden;">
+                            <a href="https://yandex.uz/maps/10335/tashkent/?utm_medium=mapframe&utm_source=maps"
+                                style="color:#eee;font-size:12px;position:absolute;top:0px;">Ташкент</a>
+                            <a href="https://yandex.uz/maps/10335/tashkent/?ll=69.207241%2C41.279622&mode=whatshere&utm_medium=mapframe&utm_source=maps&whatshere%5Bpoint%5D=69.205371%2C41.279869&whatshere%5Bzoom%5D=21&z=17"
                                 style="color:#eee;font-size:12px;position:absolute;top:14px;">Квартал Ц, 16А —
-                                Яндекс Карты</a><iframe
+                                Яндекс Карты</a>
+                            <iframe
                                 src="https://yandex.uz/map-widget/v1/?ll=69.207241%2C41.279622&mode=whatshere&utm_source=share&whatshere%5Bpoint%5D=69.205371%2C41.279869&whatshere%5Bzoom%5D=21&z=17"
                                 width="560" height="400" frameborder="1" allowfullscreen="true"
-                                style="position:relative;"></iframe></div>
+                                style="position:relative;"></iframe>
+                        </div>
                     </div>
                     <div class="map-google" style="display: none;">
                         <iframe
@@ -102,8 +122,16 @@
                                 href="http://2gis.uz/tashkent/center/69.205358,41.280045/zoom/18/routeTab/rsType/bus/to/69.205358,41.280045╎Garant Baholash Servis, компания?utm_medium=widget-source&utm_campaign=firmsonmap&utm_source=route">Найти
                                 проезд до Garant Baholash Servis, компания</a></div>
                         <script charset="utf-8" src="https://widgets.2gis.com/js/DGWidgetLoader.js"></script>
-                        <script
-                            charset="utf-8">new DGWidgetLoader({ "width": 560, "height": 400, "borderColor": "#a3a3a3", "pos": { "lat": 41.28043493027539, "lon": 69.20545041561128, "zoom": 18 }, "opt": { "city": "tashkent" }, "org": [{ "id": "70000001057056315" }] });</script>
+                        <script charset="utf-8">
+                            new DGWidgetLoader({
+                                "width": 560,
+                                "height": 400,
+                                "borderColor": "#a3a3a3",
+                                "pos": { "lat": 41.28043493027539, "lon": 69.20545041561128, "zoom": 18 },
+                                "opt": { "city": "tashkent" },
+                                "org": [{ "id": "70000001057056315" }]
+                            });
+                        </script>
                         <noscript style="color:#c00;font-size:16px;font-weight:bold;">Виджет карты использует
                             JavaScript.
                             Включите его в настройках вашего браузера.</noscript>
@@ -116,8 +144,8 @@
                 </div>
             </div>
         </div>
-        </div>
-    </main>
+    </div>
+    </div>
     <footer>
         <div class="container">
             <div class="footer-top">
@@ -159,9 +187,9 @@
                     <ul>
                         <li class="contact-us-item" id="address"><a href="#">Toshkent shahar, Chilonzor tumani,
                                 <br /> Navbahor MFY, S MAVZESI, 16A-UY</a></li>
-                        <li class="contact-us-item" id="mail"><a mailto="info@seoul-edu.com"
-                                href="#">info@seoul-edu.com</a></li>
-                        <li class="contact-us-item" id="phone"><a tel="+998 90 922 22 22" href="#">+998 90 922 22 22</a>
+                        <li class="contact-us-item" id="mail"><a href="mailto:info@seoul-edu.com">info@seoul-edu.com</a>
+                        </li>
+                        <li class="contact-us-item" id="phone"><a href="tel:+998909222222">+998 90 922 22 22</a>
                         </li>
                     </ul>
                 </div>
@@ -179,26 +207,3 @@
 </body>
 
 </html>
-
-
-<!-- 
-<form action="#">
-    <div class="user-details">
-        <div class="input-box">
-            <span class="details">First name</span>
-            <input type="text" placeholder="Enter your name" required>
-        </div>
-        <div class="input-box">
-            <span class="details">Last name</span>
-            <input type="text" placeholder="Enter your last name" required>
-        </div>
-        <div class="input-box">
-            <span class="details">Phone number</span>
-            <input type="tel" placeholder="Enter your actual Telegram number" required>
-        </div>
-        <div class="input-box">
-            <span class="details">E-mail</span>
-            <input type="email" placeholder="Enter your e-mail address" required>
-        </div>
-    </div>
-</form> -->
