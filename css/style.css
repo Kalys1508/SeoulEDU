@@ -40,8 +40,7 @@ body {
     font-family: "Poppins", sans-serif;
     font-weight: 500;
     color: #2F4A50;
-    margin-top: 100px;
-    margin-top: 100px;
+    padding-top: 100px;
 }
 
 /* Set shorter line heights on headings and interactive elements */
@@ -96,12 +95,6 @@ textarea:not([rows]) {
 }
 
 header {
-    /*margin: 32px 0;*/
-    /*margin: 32px 0;*/
-    width: 100%;
-}
-
-header {
     position: fixed;
     top: 0;
     left: 0;
@@ -110,24 +103,10 @@ header {
     z-index: 1000;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
-
-
-header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    background-color: #ffffff;
-    z-index: 1000;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
-}
-
 
 .container {
     max-width: 1250px;
-    max-width: 1250px;
     position: relative;
-    padding: 0 15px;
     padding: 0 15px;
     margin: 0 auto;
 }
@@ -137,26 +116,6 @@ header {
     justify-content: space-between;
     align-items: center;
     font-size: 18px;
-    padding: 12px 20px;
-}
-
-.main-nav {
-    display: flex;
-    align-items: center;
-}
-
-.menu {
-    display: block;
-}
-
-.nav-btn {
-    display: none;
-    background: #2F4A50;
-    padding: 3px 10px 10px;
-    border: 0;
-    border-radius: 10px;
-    color: #FFFFFF;
-    font-size: 44px;
     padding: 12px 20px;
 }
 
@@ -857,7 +816,6 @@ footer {
     justify-content: center;
     color: #fff;
     padding: 32px 0 40px;
-    display: flex;
 }
 
 .copyright {
@@ -871,14 +829,12 @@ footer {
     padding-bottom: 30px;
 }
 
-.logo{
-    background-color: #FFF;
+.footer-bottom .logo {
+    padding: 10px;
+    background: #fff;
+    border-radius: 7px;
 }
 
-.footer-bottom {
-    margin: 30px;
-    padding: 0;
-}
 .copyright {
     margin-left: 35px;
 }
@@ -923,18 +879,17 @@ footer {
     padding: 15px;
     border-radius: 16px;
     width: 100%;
-    border: 2px solid rgb(17, 120, 125);
+    border: none;
+    outline: none;
 }
 
 .typedata:focus {
-    border: 3px solid #1297b5;
-    box-shadow: 5px rgba(21, 164, 220, 0.1);
+    box-shadow: 4px 4px 8px 0 rgba(21, 164, 220, 0.1);
   }
 
-  .typedata:hover {
-    border: 3px solid #2898bd;
-    box-shadow: 5px #6FDBF5;
-  }
+.typedata:hover {
+    box-shadow: 4px 4px 22px 3px rgba(21, 164, 220, 0.2);
+}
 
 .fill-form-fields-bottom {
     width: 90%;
