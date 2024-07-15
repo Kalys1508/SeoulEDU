@@ -121,6 +121,10 @@
     .maps-wrap {
         flex-direction: column;
     }
+
+    .modal-window {
+        width: 70%;
+    }
 }
 
 @media (max-width: 1100px) {
@@ -204,6 +208,10 @@
 
     .banner-bottom-title {
         font-size: 38px;
+    }
+
+    .modal-window {
+        width: 80%;
     }
 }
 
