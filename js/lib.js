@@ -72,22 +72,6 @@ document.addEventListener('DOMContentLoaded', function() {
 		});
 	});
 
-	const mapsIcons = document.querySelectorAll('.maps-icons-items img'); // Получаем все иконки карт
-
-	mapsIcons.forEach(icon => {
-		icon.addEventListener('click', function() {
-			const targetClass = this.parentNode.classList[1]; // Получаем класс родительского элемента (yandex, google, 2gis)
-			const maps = document.querySelectorAll('.maps > div'); // Получаем все карты
-
-			maps.forEach(map => {
-				map.style.display = 'none'; // Скрываем все карты
-			});
-
-			const selectedMap = document.querySelector(`.map-${targetClass}`); // Выбираем нужную карту
-			selectedMap.style.display = 'block'; // Показываем выбранную карту
-		});
-	});
-
 	const modal = document.querySelector('.modal');
 	const getStartedBtn = document.querySelector('.appointment .btn-primary');
 	const getStartedBtn2 = document.querySelector('.btn-banner-left');
