@@ -166,6 +166,10 @@
         right: 60px;
     }
 
+    #circle-6 {
+        display: none;
+    }
+
     .why-choose-us-block {
         flex-direction: column;
     }
@@ -416,6 +420,22 @@
         border-radius: 5px;
     }
 
+    .our-expert-teachers-body-item-name, .our-expert-teachers-body-description {
+        color: #2F4A50;
+    }
+
+    .our-expert-teachers-body-item.active .our-expert-teachers-body-item-name {
+        color: #FFFFFF;
+    }
+
+    .our-expert-teachers-body-item.active .our-expert-teachers-body-description {
+        color: #FFFFFF;
+    }
+
+    .our-expert-teachers-head-btn {
+        font-size: 14px;
+        padding: 10px 16px;
+    }
 }
 
 /* Устройства X-Small (портретные телефоны, менее 576 пикселей) */
@@ -425,6 +445,10 @@
  @media (max-width: 576px) {
      .banner-title {
          font-size: 28px;
+     }
+
+     .why-choose-us-block {
+         margin-top: 0;
      }
 
      .banner-statistic {
@@ -475,8 +499,75 @@
      #company, #support {
          display: none;
      }
+
+     .our-expert-teachers-head-btn {
+         font-size: 12px;
+     }
+
+     .footer-top {
+        flex-direction: column;
+     }
+
  }
 
+@media (max-width: 500px) {
+    .emoji {
+        display: none;
+    }
+
+    .top-menu {
+        font-size: 14px;
+    }
+
+    #circle-1 {
+        top: 60px;
+        right: 180px;
+        width: 160px;
+        height: 160px;
+    }
+
+    #circle-2 {
+        top: 256px;
+        left: -30px;
+        width: 105px;
+        height: 105px;
+    }
+
+    #circle-3 {
+        top: 200px;
+        right: 10px;
+        width: 139px;
+        height: 139px;
+    }
+
+    #circle-4 {
+        width: 208px;
+        height: 208px;
+        top: 200px;
+        left: 25px;
+    }
+
+    #circle-5 {
+        width: 195px;
+        height: 189px;
+        top: 450px;
+        left: 0;
+    }
+
+
+
+    .menu-list-item {
+        margin-right: 10px;
+    }
+}
+
+@media (max-width: 460px) {
+    #circle-6 {
+        width: 139px;
+        height: 139px;
+        top: 320px;
+    }
+}
 
 @media (max-width: 430px) {
 
@@ -499,7 +590,6 @@
     }
 
     .typedata {
-        padding: 5px;
         border-radius: 5px;
         font-size: 10px;
         padding-bottom: 10px;
@@ -509,10 +599,10 @@
     .fill-form-fields {
         margin: 10px 0;
     }
+
     .fill-form-fields-bottom {
         display: inline-block;
-        margin: 10px;
-        margin-top: 0;
+        margin: 0 10px 10px;
         padding-bottom: 0;
     }
 
@@ -523,8 +613,108 @@
     .btn-primary {
         background-color: #2F4A50;
         color: #6FDBF5;
-        /* padding: 16px; */
         font-size: 12px;
+    }
+
+    .banner-statistic-item {
+        padding: 5px;
+    }
+
+    .banner-statistic-item-number {
+        font-size: 16px;
+    }
+
+    .banner-statistic-item-title {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 8px 14px;
+        border-radius: 7px;
+    }
+
+    .btn-banner-left {
+        font-size: 14px;
+        padding-top: 12px;
+    }
+
+    .btn-banner-right {
+        padding-right: 48px;
+        background-position: 90% center;
     }
 }
 
+@media (max-width: 430px) {
+    #circle-1 {
+        top: 50px;
+        right: 100px;
+    }
+
+    #circle-3 {
+        right: 0;
+    }
+
+    .banner {
+        padding: 38px 27px 38px 38px;
+    }
+
+    .banner-title {
+        font-size: 18px;
+    }
+
+    .banner-text {
+        font-size: 14px;
+    }
+
+    .btn {
+        padding: 8px 12px;
+        border-radius: 7px;
+        font-size: 12px;
+    }
+
+    .btn-banner-left {
+        padding-top: 12px;
+    }
+
+    .btn-banner-right {
+        padding-right: 48px;
+        background-position: 90% center;
+    }
+
+    .banner-image {
+        bottom: -38px;
+    }
+}
+
+@media (max-width: 375px) {
+    #circle-1 {
+        top: 60px;
+        right: 80px;
+    }
+
+    #circle-2 {
+        top: 226px;
+    }
+
+    #circle-3 {
+        top: 180px;
+        right: -10px;
+    }
+
+    .banner-statistic-item-title {
+        font-size: 12px;
+    }
+
+    .btn {
+        padding: 8px 10px;
+    }
+
+    .btn-banner-left {
+        padding-top: 12px;
+    }
+
+    .btn-banner-right {
+        padding-right: 38px;
+        background-position: 92% center;
+    }
+}

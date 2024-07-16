@@ -344,8 +344,6 @@ header {
 
 .why-choose-us-block-left-side-circle-wrap {
     z-index: 1;
-    top: 0;
-    left: 0;
 }
 
 .circle {
@@ -356,7 +354,7 @@ header {
 #circle-4 {
     width: 308px;
     height: 308px;
-    top: 0px;
+    top: 0;
     left: 25px;
     background: #6FDBF5;
 }
