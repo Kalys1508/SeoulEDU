@@ -331,10 +331,16 @@
 
     .nav-btn {
         display: block;
-        align-self: start;
+        align-self: flex-end;
+    }
+
+    .main-nav {
+        flex-direction: column-reverse;
+        align-items: flex-end;
     }
 
     .menu {
+        text-align: right;
         visibility: hidden; /* Скрыто по умолчанию на маленьких экранах */
         opacity: 0;
         max-height: 0;
@@ -349,6 +355,12 @@
         opacity: 1;
         max-height: 500px; /* Достаточное значение для меню */
         transform: scaleY(1);
+        margin: 20px 0 10px;
+    }
+
+    .menu-list-item {
+        font-size: 26px;
+        margin-right: 0;
     }
 
     .appointment {
@@ -516,7 +528,7 @@
     }
 
     .top-menu {
-        font-size: 14px;
+        font-size: 26px;
     }
 
     #circle-1 {
@@ -552,12 +564,6 @@
         height: 189px;
         top: 450px;
         left: 0;
-    }
-
-
-
-    .menu-list-item {
-        margin-right: 10px;
     }
 }
 
