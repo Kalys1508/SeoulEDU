@@ -87,4 +87,31 @@ document.addEventListener('DOMContentLoaded', function() {
 			selectedMap.style.display = 'block'; // Показываем выбранную карту
 		});
 	});
+
+	const modal = document.querySelector('.modal');
+	const getStartedBtn = document.querySelector('.appointment .btn-primary');
+	const getStartedBtn2 = document.querySelector('.btn-banner-left');
+	const getStartedBtn3 = document.querySelector('.banner-bottom-text .btn-primary');
+	const closeBtn = document.querySelector('.btn-close');
+	const overlay = document.querySelector('.overlay');
+
+	getStartedBtn.addEventListener('click', function() {
+		modal.classList.add('show');
+	});
+
+	getStartedBtn2.addEventListener('click', function() {
+		modal.classList.add('show');
+	});
+
+	getStartedBtn3.addEventListener('click', function() {
+		modal.classList.add('show');
+	});
+
+	closeBtn.addEventListener('click', function() {
+		modal.classList.remove('show');
+	});
+
+	overlay.addEventListener('click', function() {
+		modal.classList.remove('show');
+	});
 });

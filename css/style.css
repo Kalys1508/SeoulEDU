@@ -966,6 +966,6 @@ footer {
 .modal.show {
     visibility: visible;
     opacity: 1;
-    transition: all 0.9s ease-out;
+    transition: all 0.3s ease-out;
 }
 /* popup window part end */
