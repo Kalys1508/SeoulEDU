@@ -489,7 +489,7 @@
         padding: 10px;
         border-radius: 5px;
         font-size: 12px;
-        width: 340px;
+        width: 100%;
     }
 
      .banner-bottom {
@@ -577,7 +577,6 @@
     }
 
     .fill-form-body-middle {
-        display: inline-block;
         margin: 10px;
     }
 
@@ -601,7 +600,6 @@
     }
 
     .fill-form-fields-bottom {
-        display: inline-block;
         margin: 0 10px 10px;
         padding-bottom: 0;
     }
